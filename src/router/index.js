@@ -7,13 +7,16 @@ import Home from '@/components/Home'   //登录后主页面
 import Login from '@/components/Login' //登录页面
 import Welcome from '@/components/Welcome' //登录后主页面显示页面
 
+import User from '@/components/User' //登录后用户管理页面
+
 Vue.use(Router)
 
 var router = new Router({
   routes: [
     { path: '/', component: Haha },
     { path: '/home', component: Home, redirect:'/welcome' ,children:[
-      {path:'/welcome',component:Welcome}
+      {path:'/welcome',component:Welcome},
+      {path:'/users',component:User}
     ]},
     { path: '/login', component: Login }
   ]

@@ -3,9 +3,28 @@ html,body,#app{
     margin: 0;
     padding: 0;
 }
+
+/* 左侧菜单栏设置样式 */
 .el-submenu__title,.el-menu-item{
     font-size: 13px;
 }
 i.iconfont{
     margin-right: 15px;
+}
+
+
+/* 给卡片设置公共的样式 */
+.el-card{
+    margin-top: 15px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* 给table表格设置统一样式 */
+.el-table{
+    margin-top: 15px;
+    font-size: 12px;
+}
+/* 给分页设置样式 */
+.el-pagination{
+    margin-top: 15px;
 }
